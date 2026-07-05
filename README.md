@@ -195,3 +195,4 @@ POST /api/orchestrator/route
 ---
 
 *NEROX AI — Not a chatbot. Not an ERP. An AI Operating System for Students.*
+"# NEROX-AI" 
