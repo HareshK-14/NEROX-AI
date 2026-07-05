@@ -115,6 +115,10 @@ const startServer = async () => {
     console.log('✅ MySQL database connected successfully');
     connection.release();
 
+    // Auto-run DB migrations
+    const migrateDb = require('./config/migrateDb');
+    await migrateDb(pool);
+
     app.listen(PORT, () => {
       console.log(`🚀 NEROX AI Server running on port ${PORT}`);
       console.log(`📡 Environment: ${process.env.NODE_ENV || 'development'}`);
