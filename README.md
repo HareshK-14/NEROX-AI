@@ -34,8 +34,8 @@
 |---|---|---|
 | [🎯 Key Features](#-key-features) | [🏗️ Architecture](#%EF%B8%8F-architecture) | [🚀 Quick Start](#-quick-start) |
 | [🆚 Why NEROX AI?](#-why-nerox-ai) | [🤖 Agent Orchestration](#-agent-orchestration) | [🔑 Environment Variables](#-environment-variables) |
-| [🤖 AI Agents (20 Total)](#-ai-agents-20-total) | [📡 API Endpoints](#-api-endpoints) | [🗺️ Roadmap](#%EF%B8%8F-roadmap) |
-| [🎨 Design System](#-design-system) | | [🏆 Built With](#-built-with) |
+| [🤖 AI Agents (20 Total)](#-ai-agents-20-total) | [🛡️ Advanced Capabilities](#%EF%B8%8F-advanced-capabilities) | [🗺️ Roadmap](#%EF%B8%8F-roadmap) |
+| [🎨 Design System](#-design-system) | [📡 API Endpoints](#-api-endpoints) | [🏆 Built With](#-built-with) |
 
 ---
 
@@ -199,6 +199,65 @@ nerox-ai/
 
 ---
 
+## 🛡️ Advanced Capabilities
+
+### 🧠 Agent Context Memory
+
+Each hub agent isn't stateless — every request is enriched with the student's recent history before it reaches Gemini, so answers stay consistent across a session instead of repeating the same generic response.
+
+```mermaid
+graph LR
+    A[Student Query] --> B[Context Builder]
+    B --> C[Recent Agent History - MySQL]
+    B --> D[Student Profile + Skill Gaps]
+    C & D --> E[Enriched Prompt]
+    E --> F[Gemini 1.5 Flash]
+    F --> G[Response + Updated History]
+
+    style E fill:#7C3AED
+    style F fill:#8E75B2
+```
+
+| Layer | Purpose |
+|---|---|
+| Context Builder | Merges last N agent interactions + profile into a single prompt payload |
+| History Store | `analytics/history` table logs every agent call for continuity and reporting |
+| Profile Enrichment | Skill gaps and target roles are injected automatically into Placement/Career agents |
+
+### ⚡ Rate Limiting & Response Caching
+
+Gemini calls are metered per-user to control cost and stay within API quotas, with short-lived caching on repeat queries (e.g. re-opening the same revision plan).
+
+| Control | Behavior |
+|---|---|
+| Per-user rate limit | Throttles rapid-fire requests to a single agent |
+| Response cache | Identical prompt + context within a short window returns the cached result |
+| Graceful fallback | On Gemini timeout/error, the agent returns a clear retry message instead of a raw stack trace |
+
+### 🔐 Security Reference
+
+| Signal | Applied At | Purpose |
+|---|---|---|
+| JWT verification | All `/api/*` routes except auth | Confirms the requester is a logged-in student |
+| Input validation | `middleware/validate` | Rejects malformed payloads before they reach an agent or DB |
+| Upload restrictions | `middleware/upload` (Multer) | Limits file type/size for PDF-to-notes uploads |
+| Password hashing | `bcryptjs` | Credentials never stored in plain text |
+| Env isolation | `.env` (gitignored) | Keeps `JWT_SECRET` and `GEMINI_API_KEY` out of the repo |
+
+### 📊 Success Score Algorithm (Placement Analytics)
+
+```
+Success Score = 
+    (Coding Test Avg  × 0.35) +
+    (Mock Interview/GD Score × 0.25) +
+    (Company Readiness Score × 0.25) +
+    (Daily Mission Consistency × 0.15)
+```
+
+Exposed via `GET /api/analytics/success-score`, this gives students one number to track improvement over time instead of scattered per-module stats.
+
+---
+
 ## 🎨 Design System
 
 | Aspect | Choice |
@@ -324,8 +383,12 @@ UPLOAD_DIR=uploads
 | 2 | ✅ Done | 20 AI agents across 5 hubs (Gemini 1.5 Flash) |
 | 3 | ✅ Done | Orchestrator routing + React/Vite/TS frontend |
 | 4 | ✅ Done | Glassmorphic dark UI + Recharts analytics |
-| 5 | 🔲 Planned | Deployment (Docker/CI) + production Gemini rate limiting |
-| 6 | 🔲 Planned | Mobile-responsive polish + notification system |
+| 5 | 🔲 Planned | Deployment (Docker + CI/CD) + production Gemini rate limiting |
+| 6 | 🔲 Planned | Real-time notification system (deadlines, daily missions, GD slots) |
+| 7 | 🔲 Planned | Multi-language support for regional-language students |
+| 8 | 🔲 Planned | Admin dashboard for faculty/placement cell oversight |
+| 9 | 🔲 Planned | Voice-input queries for hands-free agent interaction |
+| 10 | 🔲 Planned | Native mobile app (React Native) sharing the same agent backend |
 
 ---
 
