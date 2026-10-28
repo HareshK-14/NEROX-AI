@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:8b5cf6,100:06b6d4&height=220&section=header&text=NEROX%20AI&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Autonomous%20Campus%20Intelligence%20%26%20Placement%20Operating%20System&descAlignY=60&descSize=18" width="100%" alt="NEROX AI banner" />
+<img src="docs/nerox-banner.svg" width="100%" alt="NEROX AI banner" />
 
 ### 🤖 Not a chatbot. Not an ERP. An AI Operating System for Students.
 
@@ -302,13 +302,13 @@ Exposed via `GET /api/analytics/success-score`.
 
 ```
 nerox-ai/
-├── client/                    React + Vite + TypeScript
+├── frontend/                  React + Vite + TypeScript
 │   └── src/
 │       ├── components/        layout/ (Sidebar, Navbar) · ui/ (GlassCard, Charts)
 │       ├── context/           Auth, Theme, Agent contexts
 │       ├── pages/             10 pages
 │       └── api/               Axios API modules
-└── server/                    Node.js + Express
+└── backend/                   Node.js + Express
     ├── src/
     │   ├── config/            DB + Gemini config
     │   ├── controllers/       10 controller modules
@@ -396,12 +396,12 @@ POST   /api/orchestrator/route
 ```bash
 git clone https://github.com/HareshK-14/NEROX-AI.git
 cd NEROX-AI
-mysql -u root -p < server/database/schema.sql
+mysql -u root -p < backend/database/schema.sql
 ```
 
 **2 · Backend**
 ```bash
-cd server
+cd backend
 cp .env.example .env     # add your MySQL credentials and Gemini key
 npm install
 npm run dev
@@ -409,7 +409,7 @@ npm run dev
 
 **3 · Frontend** (new terminal)
 ```bash
-cd client
+cd frontend
 npm install
 npm run dev
 ```
@@ -417,13 +417,13 @@ npm run dev
 **4 · Get a Gemini API key**
 1. Open [Google AI Studio](https://aistudio.google.com/app/apikey)
 2. Create an API key
-3. Add it to `server/.env` as `GEMINI_API_KEY`
+3. Add it to `backend/.env` as `GEMINI_API_KEY`
 
 </details>
 
 ### 🔑 Environment Variables
 
-**`server/.env`**
+**`backend/.env`**
 ```
 PORT=5000
 DB_HOST=localhost
@@ -504,6 +504,5 @@ B.Tech Information Technology, V.S.B Engineering College, Karur
 
 *NEROX AI: Not a chatbot. Not an ERP. An AI Operating System for Students.*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:8b5cf6,100:6366f1&height=100&section=footer" width="100%" alt="footer" />
 
 </div>
