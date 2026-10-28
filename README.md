@@ -1,15 +1,14 @@
-```
-███╗   ██╗███████╗██████╗  ██████╗ ██╗  ██╗     █████╗ ██╗
-████╗  ██║██╔════╝██╔══██╗██╔═══██╗╚██╗██╔╝    ██╔══██╗██║
-██╔██╗ ██║█████╗  ██████╔╝██║   ██║ ╚███╔╝     ███████║██║
-██║╚██╗██║██╔══╝  ██╔══██╗██║   ██║ ██╔██╗     ██╔══██║██║
-██║ ╚████║███████╗██║  ██║╚██████╔╝██╔╝ ██╗    ██║  ██║██║
-╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝╚═╝
-```
+<div align="center">
 
-## NEROX AI 🤖
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:8b5cf6,100:06b6d4&height=220&section=header&text=NEROX%20AI&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Autonomous%20Campus%20Intelligence%20%26%20Placement%20Operating%20System&descAlignY=60&descSize=18" width="100%" alt="NEROX AI banner" />
 
-### Autonomous Campus Intelligence & Placement Operating System
+### 🤖 Not a chatbot. Not an ERP. An AI Operating System for Students.
+
+<a href="https://github.com/HareshK-14/NEROX-AI">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=8B5CF6&center=true&vCenter=true&width=700&lines=20%2B+specialized+AI+agents+in+one+platform;Ask+anything.+The+Orchestrator+picks+the+right+agent.;From+daily+campus+queries+to+placement+readiness;Company-specific+tests%2C+GD+coaching%2C+30%2F60%2F90-day+plans" alt="Typing animation" />
+</a>
+
+<br/>
 
 [![React](https://img.shields.io/badge/REACT-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/VITE-BUILD-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
@@ -17,141 +16,76 @@
 [![Node](https://img.shields.io/badge/NODE.JS-BACKEND-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Express](https://img.shields.io/badge/EXPRESS-API-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
 [![MySQL](https://img.shields.io/badge/MYSQL-DATABASE-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
-[![Gemini](https://img.shields.io/badge/GEMINI_1.5_FLASH-20_AGENTS-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev)
+[![Gemini](https://img.shields.io/badge/GEMINI_API-AI_AGENTS-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev)
 [![JWT](https://img.shields.io/badge/AUTH-JWT-F59E0B?style=for-the-badge)](https://jwt.io)
 
-> A **Multi-Agent AI Operating System** that helps students throughout their complete academic and placement journey — from daily campus queries to full placement readiness.
->
-> *NEROX AI — Not a chatbot. Not an ERP. An AI Operating System for Students.*
+<br/>
 
-[🚀 Quick Start](#-quick-start) · [🤖 AI Agents](#-ai-agents-20-total) · [🏗️ Architecture](#%EF%B8%8F-architecture) · [📡 API](#-api-endpoints) · [🎨 Design](#-design-system)
+[😟 Problem](#-the-problem) · [💡 Solution](#-the-solution) · [🧩 Hubs](#-the-5-hubs) · [🤖 Agents](#-ai-agents) · [📸 Screenshots](#-screenshots) · [🏗️ Architecture](#%EF%B8%8F-architecture) · [📡 API](#-api-endpoints) · [🚀 Quick Start](#-quick-start) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
 
----
-
-## 📑 Table of Contents
-
-| Core Sections | Technical Deep Dives | Resources |
-|---|---|---|
-| [🎯 Key Features](#-key-features) | [🏗️ Architecture](#%EF%B8%8F-architecture) | [🚀 Quick Start](#-quick-start) |
-| [🆚 Why NEROX AI?](#-why-nerox-ai) | [🤖 Agent Orchestration](#-agent-orchestration) | [🔑 Environment Variables](#-environment-variables) |
-| [🤖 AI Agents (20 Total)](#-ai-agents-20-total) | [🛡️ Advanced Capabilities](#%EF%B8%8F-advanced-capabilities) | [🗺️ Roadmap](#%EF%B8%8F-roadmap) |
-| [🎨 Design System](#-design-system) | [📡 API Endpoints](#-api-endpoints) | [🏆 Built With](#-built-with) |
+</div>
 
 ---
 
-## 🎯 Key Features
+## 😟 The Problem
 
-| Feature | Description |
+> *"Where's my timetable? Which company should I target? Why is my code failing? What should I revise tonight?"*
+
+A student's day is spread across **many disconnected tools**:
+
+| 😕 Today | Result |
 |---|---|
-| 🏫 **Campus Hub** | Attendance, fees, timetable, library, and events — all in one AI-answered feed |
-| 📚 **Smart Learning Hub** | Concept tutoring, PDF-to-notes/flashcards, quiz generation, revision planning |
-| 💻 **Coding Hub** | AI mentor for debugging, optimization, and adaptive Java/Python/SQL tests |
-| 🎯 **Placement Intelligence Hub** | Company-specific readiness scoring, test generation, GD coaching, 30/60/90-day strategy |
-| 🧭 **Career Hub** | Career path advice, certification suggestions, skill-gap analysis vs target role |
-| 🔀 **Orchestrator Agent** | Routes each student query to the right specialized agent automatically |
-| 🌌 **Glassmorphic Dark UI** | Aurora-gradient, always-dark interface built for long study sessions |
+| Attendance, fees and timetable live in separate portals | Time wasted finding basic info |
+| Study material is generic and static | No personalised learning |
+| Mock tests are the same for every company | No real placeholder for company-specific prep |
+| Nobody tracks the *whole* journey | Students don't know how ready they actually are |
 
----
+## 💡 The Solution
 
-## 🆚 Why NEROX AI?
-
-| Capability | Typical Campus/Placement Portal | **NEROX AI** |
-|---|---|---|
-| Interaction Style | Static forms & dashboards | 🤖 20 conversational AI agents |
-| Learning Support | None or generic | 📚 PDF → summary, flashcards, mind maps |
-| Placement Prep | Generic mock tests | 🎯 Company-specific readiness + strategy plans |
-| Coding Practice | Fixed problem sets | 💻 Adaptive tests + AI debugging mentor |
-| Routing Logic | Manual navigation | 🔀 Orchestrator auto-routes to the right agent |
-| Design | Standard admin UI | 🌌 Glassmorphism + Aurora gradient theme |
-
----
-
-## 🏗️ Architecture
-
-```mermaid
-graph TB
-    A[🖥️ React + Vite + TS Frontend] --> B[🔀 Orchestrator Route]
-    B --> C[🏫 Campus Hub Agents]
-    B --> D[📚 Learning Hub Agents]
-    B --> E[💻 Coding Hub Agents]
-    B --> F[🎯 Placement Hub Agents]
-    B --> G[🧭 Career Hub Agents]
-    C & D & E & F & G --> H[🤖 Gemini 1.5 Flash]
-    B --> I[🗄️ MySQL Database]
-    A --> J[🔐 JWT Auth Middleware]
-    J --> B
-
-    style A fill:#61DAFB
-    style B fill:#7C3AED
-    style H fill:#8E75B2
-    style I fill:#4479A1
-    style J fill:#F59E0B
-```
-
-### 📁 Project Structure
+**NEROX AI** puts everything behind one conversational layer. A student asks in plain language, and an **Orchestrator** routes the query to the right specialised agent.
 
 ```
-nerox-ai/
-├── client/                    React + Vite + TypeScript frontend
-│   ├── src/
-│   │   ├── components/        Reusable UI components
-│   │   │   ├── layout/        Sidebar, Navbar, PageWrapper
-│   │   │   └── ui/            GlassCard, Button, Charts, etc.
-│   │   ├── context/           Auth, Theme, Agent contexts
-│   │   ├── pages/             10 full pages
-│   │   └── api/                Axios API modules
-│   └── ...
-└── server/                    Node.js + Express backend
-    ├── src/
-    │   ├── config/             DB + Gemini config
-    │   ├── controllers/        10 controller modules
-    │   ├── services/           20 AI agent services
-    │   ├── routes/             10 route modules
-    │   ├── middleware/         Auth, upload, validate
-    │   └── utils/              Response helpers
-    └── database/
-        └── schema.sql          MySQL schema (13 tables)
-```
-
----
-
-## 🔀 Agent Orchestration
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    🎓 STUDENT QUERY                               │
-│         "Generate a 5-mark quiz on OS process scheduling"        │
-└────────────────────────────┬─────────────────────────────────────┘
+                    🎓 "Generate a 5-mark quiz on OS scheduling"
+                                      │
+                                      ▼
+                            🔀  ORCHESTRATOR
+                  ┌──────────┬────────┴───────┬──────────┐
+                  ▼          ▼                ▼          ▼
+              🏫 Campus  📚 Learning       💻 Coding   🎯 Placement   🧭 Career
                              │
-          ╔══════════════════▼═══════════════════════════════════╗
-          ║      🔐  AUTH MIDDLEWARE                              ║
-          ║            JWT verification                          ║
-          ╚═══════════════╤═══════════════════════════════════════╝
-                          │
-          ╔═══════════════▼═══════════════════════════════════════╗
-          ║      🔀  ORCHESTRATOR ROUTE                           ║
-          ║          POST /api/orchestrator/route                ║
-          ║                                                      ║
-          ║  Intent ─────────────► Smart Learning Hub             ║
-          ║  Agent ──────────────► Quiz Generator                ║
-          ╚═══════════════╤═══════════════════════════════════════╝
-                          │
-          ╔═══════════════▼═══════════════════════════════════════╗
-          ║      🤖  QUIZ GENERATOR AGENT (Gemini 1.5 Flash)      ║
-          ║                                                      ║
-          ║  📋 Input: topic + difficulty + question format       ║
-          ║  ✅ Output: MCQ / 2M / 5M / 10M / Viva questions       ║
-          ╚═══════════════╤═══════════════════════════════════════╝
-                          │
-                          ▼
-                 🗄️ Logged to MySQL for analytics + history
+                             ▼
+                      📝 Quiz Generator Agent
+                             │
+                             ▼
+                  ✅ Questions + history saved
 ```
 
 ---
 
-## 🤖 AI Agents (20 Total)
+## ✨ Why It Stands Out
 
-### Module 1 · 🏫 Campus Hub
+| 🔀 Smart routing | 🧠 Context-aware | 🎯 Placement-focused | 📊 One score |
+|---|---|---|---|
+| Orchestrator picks the right agent automatically | Agents use recent history and profile, not generic replies | Company-specific readiness, tests and strategy | A single Success Score to track progress |
+
+---
+
+## 🧩 The 5 Hubs
+
+| Hub | What students get |
+|---|---|
+| 🏫 **Campus Hub** | Attendance, fees, timetable, library and events in one AI-answered feed |
+| 📚 **Smart Learning Hub** | Concept tutoring, PDF to notes/flashcards, quiz generation, revision plans |
+| 💻 **Coding Hub** | AI mentor for debugging and optimisation, adaptive Java/Python/SQL tests |
+| 🎯 **Placement Intelligence Hub** | Readiness scoring, company tests, GD coaching, 30/60/90-day strategy |
+| 🧭 **Career Hub** | Career paths, certification suggestions, skill-gap analysis |
+
+---
+
+## 🤖 AI Agents
+
+<details open>
+<summary><b>🏫 Campus Hub (4)</b></summary>
 
 | Agent | Function |
 |---|---|
@@ -160,42 +94,125 @@ nerox-ai/
 | Library Agent | Book search, recommendations, summaries |
 | Events Agent | Hackathons, workshops, registration |
 
-### Module 2 · 📚 Smart Learning Hub
+</details>
+
+<details>
+<summary><b>📚 Smart Learning Hub (4)</b></summary>
 
 | Agent | Function |
 |---|---|
 | Smart Tutor | Concept explanations, examples, notes |
-| Notes Intelligence | PDF → Summary, Flashcards, Mind Map |
+| Notes Intelligence | PDF to Summary, Flashcards, Mind Map |
 | Quiz Generator | MCQ, 2M, 5M, 10M, Viva questions |
-| Revision Planner | Daily/weekly/exam study plans |
+| Revision Planner | Daily, weekly and exam study plans |
 
-### Module 3 · 💻 Coding Hub
+</details>
+
+<details>
+<summary><b>💻 Coding Hub (3)</b></summary>
 
 | Agent | Function |
 |---|---|
-| Coding Mentor | Explain, debug, optimize, complexity |
+| Coding Mentor | Explain, debug, optimise, complexity |
 | Debug Agent | Error detection, fix, better code |
 | Coding Test Agent | Adaptive Java/Python/SQL tests |
 
-### Module 4 · 🎯 Placement Intelligence Hub
+</details>
+
+<details>
+<summary><b>🎯 Placement Intelligence Hub (8)</b></summary>
 
 | Agent | Function |
 |---|---|
 | Company Readiness | Company-specific readiness score |
 | Company Explorer | Company profiles, process, salary |
 | Test Generator | Company-specific full test papers |
-| Coding Evaluator | Performance analysis, suggestions |
-| GD Coach | Topic generation, evaluation |
-| Placement Analytics | Comprehensive placement dashboard |
+| Coding Evaluator | Performance analysis and suggestions |
+| GD Coach | Topic generation and evaluation |
+| Placement Analytics | Placement dashboard |
 | Strategy Agent | 30/60/90-day preparation plans |
 | Daily Mission | Daily coding/aptitude challenges |
 
-### Module 5 · 🧭 Career Hub
+</details>
+
+<details>
+<summary><b>🧭 Career Hub (2)</b></summary>
 
 | Agent | Function |
 |---|---|
 | Career Advisor | Paths, certifications, internships |
 | Skill Gap Agent | Current vs target role gap analysis |
+
+</details>
+
+---
+
+## 📸 Screenshots
+
+> 👉 Add real images in `docs/screenshots/` and keep these file names.
+
+<div align="center">
+
+| 🏠 Dashboard | 💬 Agent Chat |
+|:---:|:---:|
+| <img src="docs/screenshots/dashboard.png" width="420" alt="Dashboard"/> | <img src="docs/screenshots/agent-chat.png" width="420" alt="Agent chat"/> |
+
+| 🎯 Placement Analytics | 📝 Quiz Generator |
+|:---:|:---:|
+| <img src="docs/screenshots/placement.png" width="420" alt="Placement analytics"/> | <img src="docs/screenshots/quiz.png" width="420" alt="Quiz generator"/> |
+
+### 🎬 Demo
+
+<img src="docs/screenshots/demo.gif" width="720" alt="Demo walkthrough"/>
+
+</div>
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+graph TB
+    A[🖥️ React + Vite + TS Client] --> J[🔐 JWT Auth Middleware]
+    J --> B[🔀 Orchestrator Route]
+    B --> C[🏫 Campus Agents]
+    B --> D[📚 Learning Agents]
+    B --> E[💻 Coding Agents]
+    B --> F[🎯 Placement Agents]
+    B --> G[🧭 Career Agents]
+    C & D & E & F & G --> H[🤖 Gemini API]
+    C & D & E & F & G --> I[(🗄️ MySQL)]
+
+    style A fill:#61DAFB,color:#000
+    style J fill:#F59E0B,color:#000
+    style B fill:#7C3AED,color:#fff
+    style H fill:#8E75B2,color:#fff
+    style I fill:#4479A1,color:#fff
+```
+
+### 🔄 Request Flow
+
+```mermaid
+sequenceDiagram
+    actor S as 🎓 Student
+    participant C as React Client
+    participant M as JWT Middleware
+    participant O as Orchestrator
+    participant A as Agent Service
+    participant G as Gemini API
+    participant DB as MySQL
+
+    S->>C: "Make a 5-mark quiz on OS scheduling"
+    C->>M: POST /api/orchestrator/route (token)
+    M->>O: Verified request
+    O->>A: Route to Quiz Generator
+    A->>DB: Fetch recent history + profile
+    A->>G: Enriched prompt
+    G-->>A: Generated questions
+    A->>DB: Log interaction
+    A-->>C: Response
+    C-->>S: Quiz displayed
+```
 
 ---
 
@@ -203,58 +220,68 @@ nerox-ai/
 
 ### 🧠 Agent Context Memory
 
-Each hub agent isn't stateless — every request is enriched with the student's recent history before it reaches Gemini, so answers stay consistent across a session instead of repeating the same generic response.
+Agents are not stateless. Each request is enriched with the student's recent history and profile before it reaches Gemini.
 
 ```mermaid
 graph LR
     A[Student Query] --> B[Context Builder]
-    B --> C[Recent Agent History - MySQL]
-    B --> D[Student Profile + Skill Gaps]
+    B --> C[Recent Agent History]
+    B --> D[Profile + Skill Gaps]
     C & D --> E[Enriched Prompt]
-    E --> F[Gemini 1.5 Flash]
+    E --> F[Gemini]
     F --> G[Response + Updated History]
 
-    style E fill:#7C3AED
-    style F fill:#8E75B2
+    style E fill:#7C3AED,color:#fff
+    style F fill:#8E75B2,color:#fff
 ```
 
-| Layer | Purpose |
+### ⚡ Rate Limiting & Caching
+
+| Control | Behaviour |
 |---|---|
-| Context Builder | Merges last N agent interactions + profile into a single prompt payload |
-| History Store | `analytics/history` table logs every agent call for continuity and reporting |
-| Profile Enrichment | Skill gaps and target roles are injected automatically into Placement/Career agents |
+| Per-user rate limit | Throttles rapid-fire requests to an agent |
+| Response cache | Repeat prompt + context in a short window returns the cached result |
+| Graceful fallback | On Gemini timeout/error, the student gets a clear retry message |
 
-### ⚡ Rate Limiting & Response Caching
+### 📊 Success Score
 
-Gemini calls are metered per-user to control cost and stay within API quotas, with short-lived caching on repeat queries (e.g. re-opening the same revision plan).
+One number that summarises a student's placement readiness:
 
-| Control | Behavior |
+| Component | Weight |
 |---|---|
-| Per-user rate limit | Throttles rapid-fire requests to a single agent |
-| Response cache | Identical prompt + context within a short window returns the cached result |
-| Graceful fallback | On Gemini timeout/error, the agent returns a clear retry message instead of a raw stack trace |
+| 💻 Coding Test Average | `███████░░░` **35%** |
+| 🎤 Mock Interview / GD Score | `█████░░░░░` **25%** |
+| 🏢 Company Readiness Score | `█████░░░░░` **25%** |
+| 🔥 Daily Mission Consistency | `███░░░░░░░` **15%** |
 
-### 🔐 Security Reference
+```
+Success Score = (Coding × 0.35) + (GD/Interview × 0.25) + (Readiness × 0.25) + (Consistency × 0.15)
+```
 
-| Signal | Applied At | Purpose |
+Exposed via `GET /api/analytics/success-score`.
+
+### 🔐 Security
+
+| Signal | Applied at | Purpose |
 |---|---|---|
-| JWT verification | All `/api/*` routes except auth | Confirms the requester is a logged-in student |
-| Input validation | `middleware/validate` | Rejects malformed payloads before they reach an agent or DB |
-| Upload restrictions | `middleware/upload` (Multer) | Limits file type/size for PDF-to-notes uploads |
-| Password hashing | `bcryptjs` | Credentials never stored in plain text |
+| JWT verification | All `/api/*` routes except auth | Confirms a logged-in student |
+| Input validation | `middleware/validate` | Rejects malformed payloads early |
+| Upload restrictions | `middleware/upload` (Multer) | Limits file type and size for PDF uploads |
+| Password hashing | `bcryptjs` | No plain-text passwords |
 | Env isolation | `.env` (gitignored) | Keeps `JWT_SECRET` and `GEMINI_API_KEY` out of the repo |
 
-### 📊 Success Score Algorithm (Placement Analytics)
+---
 
-```
-Success Score = 
-    (Coding Test Avg  × 0.35) +
-    (Mock Interview/GD Score × 0.25) +
-    (Company Readiness Score × 0.25) +
-    (Daily Mission Consistency × 0.15)
-```
+## 🧗 Challenges & What I Learned
 
-Exposed via `GET /api/analytics/success-score`, this gives students one number to track improvement over time instead of scattered per-module stats.
+| Challenge | How I handled it |
+|---|---|
+| Routing a free-text query to the right one of 20+ agents | Built a single Orchestrator route that classifies intent and dispatches |
+| Keeping AI answers consistent across a session | Added a context builder using recent history and profile |
+| Controlling API cost and failures | Per-user rate limits, caching and graceful fallbacks |
+| One score for a many-part journey | Designed a weighted Success Score across coding, GD, readiness and consistency |
+
+**Skills practiced:** multi-agent design · prompt engineering · REST API design · JWT auth · relational schema design (13 tables) · TypeScript/React UI
 
 ---
 
@@ -263,99 +290,138 @@ Exposed via `GET /api/analytics/success-score`, this gives students one number t
 | Aspect | Choice |
 |---|---|
 | Theme | Dark (always-on) |
-| Primary Colors | Indigo `#6366f1` · Violet `#8b5cf6` · Cyan `#06b6d4` |
+| Colours | Indigo `#6366f1` · Violet `#8b5cf6` · Cyan `#06b6d4` |
 | Style | Glassmorphism + Aurora gradients |
 | Typography | Space Grotesk + Inter |
-| Animations | Framer Motion + CSS keyframes |
+| Animation | Framer Motion + CSS keyframes |
 | Charts | Recharts (dark theme) |
+
+---
+
+## 📁 Project Structure
+
+```
+nerox-ai/
+├── client/                    React + Vite + TypeScript
+│   └── src/
+│       ├── components/        layout/ (Sidebar, Navbar) · ui/ (GlassCard, Charts)
+│       ├── context/           Auth, Theme, Agent contexts
+│       ├── pages/             10 pages
+│       └── api/               Axios API modules
+└── server/                    Node.js + Express
+    ├── src/
+    │   ├── config/            DB + Gemini config
+    │   ├── controllers/       10 controller modules
+    │   ├── services/          AI agent services
+    │   ├── routes/            10 route modules
+    │   ├── middleware/        auth · upload · validate
+    │   └── utils/             Response helpers
+    └── database/
+        └── schema.sql         MySQL schema (13 tables)
+```
 
 ---
 
 ## 📡 API Endpoints
 
-```
-POST /api/auth/register
-POST /api/auth/login
-GET  /api/auth/me
+<details>
+<summary><b>👉 Click to view all endpoints</b></summary>
 
-GET  /api/profile
-PUT  /api/profile
-POST /api/profile/skill
+```
+AUTH
+POST   /api/auth/register
+POST   /api/auth/login
+GET    /api/auth/me
+
+PROFILE
+GET    /api/profile
+PUT    /api/profile
+POST   /api/profile/skill
 DELETE /api/profile/skill/:id
 
-POST /api/campus/helpdesk
-POST /api/campus/timetable
-POST /api/campus/library
-POST /api/campus/events
+CAMPUS
+POST   /api/campus/helpdesk
+POST   /api/campus/timetable
+POST   /api/campus/library
+POST   /api/campus/events
 
-POST /api/learning/tutor
-POST /api/learning/notes
-POST /api/learning/quiz
-POST /api/learning/revision
+LEARNING
+POST   /api/learning/tutor
+POST   /api/learning/notes
+POST   /api/learning/quiz
+POST   /api/learning/revision
 
-POST /api/coding/mentor
-POST /api/coding/debug
-POST /api/coding/test
+CODING
+POST   /api/coding/mentor
+POST   /api/coding/debug
+POST   /api/coding/test
 
-POST /api/placement/readiness
-POST /api/placement/company
-POST /api/placement/test
-POST /api/placement/gd
-GET  /api/placement/analytics
-POST /api/placement/strategy
+PLACEMENT
+POST   /api/placement/readiness
+POST   /api/placement/company
+POST   /api/placement/test
+POST   /api/placement/gd
+GET    /api/placement/analytics
+POST   /api/placement/strategy
 
-POST /api/career/advise
-POST /api/career/skill-gap
+CAREER
+POST   /api/career/advise
+POST   /api/career/skill-gap
 
-GET  /api/analytics/success-score
-GET  /api/analytics/history
+ANALYTICS & MISSIONS
+GET    /api/analytics/success-score
+GET    /api/analytics/history
+GET    /api/mission/daily
+POST   /api/mission/complete
+GET    /api/mission/points
 
-GET  /api/mission/daily
-POST /api/mission/complete
-GET  /api/mission/points
-
-POST /api/orchestrator/route
+ORCHESTRATOR
+POST   /api/orchestrator/route
 ```
+
+</details>
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+
-- MySQL 8+
-- Google Gemini API Key
+**Prerequisites:** Node.js 18+, MySQL 8+, a Google Gemini API key
 
-### 1 · Clone & Setup
+<details>
+<summary><b>👉 Click to expand setup steps</b></summary>
 
+<br/>
+
+**1 · Clone and set up the database**
 ```bash
 git clone https://github.com/HareshK-14/NEROX-AI.git
 cd NEROX-AI
-
-# Setup database
 mysql -u root -p < server/database/schema.sql
+```
 
-# Setup backend
+**2 · Backend**
+```bash
 cd server
-cp .env.example .env
-# Edit .env with your MySQL credentials and Gemini API key
+cp .env.example .env     # add your MySQL credentials and Gemini key
 npm install
 npm run dev
+```
 
-# Setup frontend (new terminal)
+**3 · Frontend** (new terminal)
+```bash
 cd client
 npm install
 npm run dev
 ```
 
-### 2 · Get Gemini API Key
-1. Visit https://makersuite.google.com/app/apikey
-2. Create a new API key
+**4 · Get a Gemini API key**
+1. Open [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Create an API key
 3. Add it to `server/.env` as `GEMINI_API_KEY`
 
----
+</details>
 
-## 🔑 Environment Variables
+### 🔑 Environment Variables
 
 **`server/.env`**
 ```
@@ -371,24 +437,46 @@ CLIENT_URL=http://localhost:5173
 UPLOAD_DIR=uploads
 ```
 
-> ⚠️ Never commit a real `.env` file. Keep `GEMINI_API_KEY` and `JWT_SECRET` out of version control — `.env` should stay in `.gitignore`.
+> ⚠️ Never commit a real `.env` file. Keep it in `.gitignore`.
 
 ---
 
 ## 🗺️ Roadmap
 
-| Stage | Status | Description |
-|---|---|---|
-| 1 | ✅ Done | MySQL schema (13 tables) + auth (JWT) |
-| 2 | ✅ Done | 20 AI agents across 5 hubs (Gemini 1.5 Flash) |
-| 3 | ✅ Done | Orchestrator routing + React/Vite/TS frontend |
-| 4 | ✅ Done | Glassmorphic dark UI + Recharts analytics |
-| 5 | 🔲 Planned | Deployment (Docker + CI/CD) + production Gemini rate limiting |
-| 6 | 🔲 Planned | Real-time notification system (deadlines, daily missions, GD slots) |
-| 7 | 🔲 Planned | Multi-language support for regional-language students |
-| 8 | 🔲 Planned | Admin dashboard for faculty/placement cell oversight |
-| 9 | 🔲 Planned | Voice-input queries for hands-free agent interaction |
-| 10 | 🔲 Planned | Native mobile app (React Native) sharing the same agent backend |
+```
+✅ Stage 1   ━━  MySQL schema (13 tables) + JWT auth
+✅ Stage 2   ━━  20+ AI agents across 5 hubs
+✅ Stage 3   ━━  Orchestrator routing + React/Vite/TS frontend
+✅ Stage 4   ━━  Glassmorphic dark UI + Recharts analytics
+🔲 Stage 5   ━━  Deployment (Docker + CI/CD)               ◄── next
+🔲 Stage 6   ━━  Real-time notifications (deadlines, missions, GD slots)
+🔲 Stage 7   ━━  Multi-language support for regional-language students
+🔲 Stage 8   ━━  Admin dashboard for faculty / placement cell
+🔲 Stage 9   ━━  Voice-input queries
+🔲 Stage 10  ━━  React Native mobile app on the same backend
+```
+
+---
+
+## ❓ FAQ
+
+<details>
+<summary><b>How is this different from a normal chatbot?</b></summary>
+<br/>
+It is a set of specialised agents behind an Orchestrator. Each agent has its own job (quiz generation, debugging, readiness scoring) and uses the student's history and profile, instead of one generic assistant answering everything.
+</details>
+
+<details>
+<summary><b>How does the Orchestrator decide which agent to call?</b></summary>
+<br/>
+The student's query goes to <code>POST /api/orchestrator/route</code>, which identifies the intent and dispatches to the matching hub and agent.
+</details>
+
+<details>
+<summary><b>How are API cost and failures handled?</b></summary>
+<br/>
+Per-user rate limiting, short-lived response caching, and a graceful retry message if Gemini times out or errors.
+</details>
 
 ---
 
@@ -398,19 +486,24 @@ UPLOAD_DIR=uploads
 |---|---|
 | Frontend | React 18, Vite, TypeScript, Tailwind CSS, Framer Motion, Recharts, Lucide React |
 | Backend | Node.js, Express.js, MySQL2, JWT, bcryptjs, Multer |
-| AI | Google Gemini 1.5 Flash API (20 dedicated agents) |
+| AI | Google Gemini API (20+ dedicated agents) |
 | Database | MySQL 8 |
 
 ---
 
 ## 👤 Author
 
-**Haresh K.**
-B.Tech Information Technology, V.S.B. Engineering College
-[GitHub](https://github.com/HareshK-14)
+<div align="center">
 
----
+**Haresh K** · Full-Stack Developer
+B.Tech Information Technology, V.S.B Engineering College, Karur
 
-### ⭐ Star this repo if you find it useful!
+[![GitHub](https://img.shields.io/badge/GITHUB-HareshK--14-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HareshK-14)
 
-*NEROX AI — Not a chatbot. Not an ERP. An AI Operating System for Students.*
+### ⭐ If this project helped or inspired you, give it a star!
+
+*NEROX AI: Not a chatbot. Not an ERP. An AI Operating System for Students.*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:8b5cf6,100:6366f1&height=100&section=footer" width="100%" alt="footer" />
+
+</div>
